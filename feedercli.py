@@ -5,7 +5,7 @@ import pandas as pd
 from datetime import datetime
 
 # Add the tvdatafeed package directory to the Python path
-from tvDatafeed import TvDatafeed, Interval
+from tvDatafeeds import TvDatafeed, Interval
 
 
 def get_interval_from_string(interval_str):
