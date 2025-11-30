@@ -1,10 +1,8 @@
-import json
 import os
 import sys
 # @title Get TradingView Data as POST API
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'tvdatafeed'))
 from flask import Flask, request, jsonify
-from tvDatafeed import TvDatafeed, Interval
+from tvDatafeeds import TvDatafeed, Interval
 
 app = Flask(__name__)
 
