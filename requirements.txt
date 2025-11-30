@@ -1,0 +1,6 @@
+flask
+tvdatafeed
+setuptools
+pandas
+websocket-client
+requests
