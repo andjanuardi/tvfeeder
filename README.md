@@ -22,9 +22,10 @@ TV Feed API is a cryptocurrency data fetching service that provides a REST API i
 ## Installation
 
 1. Clone the repository:
+
    ```bash
-   git clone https://github.com/your-username/tvfeed-api.git
-   cd tvfeed-api
+   https://github.com/andjanuardi/tvfeeder.git
+   cd tvfeeder
    ```
 
 2. Install required dependencies:
@@ -35,6 +36,7 @@ TV Feed API is a cryptocurrency data fetching service that provides a REST API i
 ## Usage
 
 1. Start the API server:
+
    ```bash
    python feederapi.py
    ```
@@ -58,15 +60,18 @@ TV Feed API is a cryptocurrency data fetching service that provides a REST API i
 Fetches historical data from TradingView.
 
 **Request Body Parameters:**
+
 - `Symbol` (string): Trading symbol to fetch data for (e.g. 'XMRUSDT', default: 'XMRUSDT')
 - `Exchange` (string): Exchange to fetch data from (e.g. 'KUCOIN', default: 'KUCOIN')
 - `Bars` (integer): Number of data bars to retrieve (default: 1000, must be positive)
 - `Interval` (string): Time interval for the data (default: '1m')
 
 **Supported Intervals:**
+
 - '1m', '3m', '5m', '15m', '30m', '45m', '1h', '2h', '3h', '4h', 'd', 'w', 'M'
 
 **Example Response:**
+
 ```json
 {
   "symbol": "BTCUSDT",
@@ -90,6 +95,7 @@ Fetches historical data from TradingView.
 ## Configuration
 
 The API runs on port 5000 by default. To change this, modify the port in `feederapi.py`:
+
 ```python
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)  # Change port as needed
